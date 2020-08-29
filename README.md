@@ -8,9 +8,22 @@ API Criada em Node JS e MongoDB hospedada na Umbler.
 * `http://mydevbaseapi-com.umbler.net/`
 
 ## Campos obrigatorios e validacoes nos posts/put:
+
+No mongo:
+| Campos         | tipo   |
+---------------------------
+| nome           | string |
+| sexo           | string |
+| idade          | number |
+| hobby          | string |
+| dataNascimento | date   |
+
+
 * nome (maior que 2)
 * datanascimento (menor que a data de hoje, aceita 'DD/MM/AAAA' ou 'DD-MM-AAAA') 
 * sexo ('M', 'F', ' ')
+* A idade não foi permitida o envio via requisicoes para que possa ser calculada de acordo com a "datanascimento" antes de gravar no banco.
+* campo Hobby não é obrigatorio.
 
 ## Métodos criados:
 
