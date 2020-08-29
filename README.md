@@ -7,17 +7,15 @@ API Criada em Node JS e MongoDB hospedada na Umbler.
 * [Endpoint API - DevBase](http://mydevbaseapi-com.umbler.net/)
 * `http://mydevbaseapi-com.umbler.net/`
 
-## Campos obrigatorios e validacoes nos posts/put:
+## Campos obrigatorios e validacoes nos posts/put
 
-No mongo:
 | Campos         | tipo   |
----------------------------
+|----------------|--------|
 | nome           | string |
 | sexo           | string |
 | idade          | number |
 | hobby          | string |
 | dataNascimento | date   |
-
 
 * nome (maior que 2)
 * datanascimento (menor que a data de hoje, aceita 'DD/MM/AAAA' ou 'DD-MM-AAAA') 
