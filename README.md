@@ -3,7 +3,8 @@ API Criada em Node JS e MongoDB hospedada na Umbler.
 
 ## Requisitos:
 * Internet para acessar o endpoint crado para API.
-[Endpoint API - DevBase](http://mydevbaseapi-com.umbler.net/)
+* [Endpoint API - DevBase](http://mydevbaseapi-com.umbler.net/)
+* `http://mydevbaseapi-com.umbler.net/`
 
 ## Campos obrigatorios e validacoes nos posts/put:
 * nome (maior que 2)
@@ -58,7 +59,7 @@ API Criada em Node JS e MongoDB hospedada na Umbler.
   "hobby": "TESTE",
   "datanascimento": "12/01/1995"
 }
-
+`
 
 #### DELETE /developers/{id}
 * Apaga o registro de um desenvolvedor
