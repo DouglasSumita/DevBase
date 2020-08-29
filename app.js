@@ -5,6 +5,7 @@ const developer = require('./routes/developers')
 const mongoose = require('mongoose')
 
 app.use(function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*')
     next()
 })
 
