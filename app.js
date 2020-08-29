@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
 mongoose.Promise = global.Promise
-mongoose.connect('mongodb://localhost/developers', {
+mongoose.connect('mongodb://devbase:devbase123@mongo_devbase:27017/devbase', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
