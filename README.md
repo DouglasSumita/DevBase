@@ -7,6 +7,8 @@ API Criada em Node JS e MongoDB hospedada na Umbler.
 * [Endpoint API - DevBase](http://mydevbaseapi-com.umbler.net/)
 * `http://mydevbaseapi-com.umbler.net/`
 
+### Observação: A pasta "node_modules" esta sendo utilizado na umbler, por isso esta sendo necessário enviar para o Repositório.
+
 ## Campos obrigatorios e validacoes nos posts/put
 
 | Campos         | tipo   |
