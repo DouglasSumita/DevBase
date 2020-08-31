@@ -51,29 +51,25 @@ function dataNascimentoValido(dataNascimento) {
 }
 
 function validaCampos(developer = {}) {
-    
     const atributosFaltantes = validaObjeto.atributosFaltantes(atributosObrigatorios, Object.keys(developer))
     const error = new Error()
 
     if (atributosFaltantes.length > 0) {
-        error.setMessage('Atributos obrigatorios: ' + atributosFaltantes.toString())
-        return error
+        error.setError('Atributos obrigatorios: ' + atributosFaltantes.toString())
+    } else {
+        if (!nomeValido(developer.nome)) {
+            error.concatMessage('Nome invalido: ' + developer.nome)
+        }
+    
+        if (!sexoValido(developer.sexo)) {
+            error.concatMessage('Sexo invalido: ' + developer.sexo)
+        }
+    
+        if (!dataNascimentoValido(developer.datanascimento)) {
+            error.concatMessage('Data Nascimento inválido: ', developer.datanascimento)
+        }
     }
-
-    if (!nomeValido(developer.nome)) {
-        error.concatMessage('Nome invalido: ' + developer.nome)
-    }
-
-    if (!sexoValido(developer.sexo)) {
-        error.concatMessage('Sexo invalido: ' + developer.sexo)
-    }
-
-    if (!dataNascimentoValido(developer.datanascimento)) {
-        error.concatMessage('Data Nascimento inválido: ', developer.datanascimento)
-    }
-
-    return error
-
+    return error.getMessage()
 }
 
 module.exports = { 

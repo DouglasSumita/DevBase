@@ -23,7 +23,7 @@ function developerTeste() {
         nome: montaStringAleatoria(),
         sexo: getSexoRandom(),
         hobby: montaStringAleatoria(),
-        datanascimento: '12-01-'+getAnoRandom().toString()
+        datanascimento: '12-01-' + getAnoRandom().toString()
     }
 }
 
