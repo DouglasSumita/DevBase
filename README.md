@@ -1,4 +1,3 @@
-# Projeto API - DevBase
 API Criada em Node JS e MongoDB hospedada na Umbler.
 
 ## Requisitos:
