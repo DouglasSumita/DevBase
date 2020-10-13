@@ -3,7 +3,7 @@ API Criada em Node JS e MongoDB hospedada na Umbler.
 ## Requisitos:
 * Internet para acessar o endpoint criado para API.
 * Utilizar Postman para realizar as requisicoes
-* [Endpoint API - DevBase](http://mydevbaseapi-com.umbler.net/)
+* ** OFFLINE ** [Endpoint API - DevBase](http://mydevbaseapi-com.umbler.net/) 
 * `http://mydevbaseapi-com.umbler.net/`
 
 ### Observação: A pasta "node_modules" esta sendo utilizado na umbler, por isso esta sendo necessário enviar para o Repositório.
